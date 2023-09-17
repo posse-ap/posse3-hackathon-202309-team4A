@@ -1,3 +1,13 @@
+// ヘッダー・ボタンの要素を取得
+const header = document.getElementById("js-header");
+const button = document.getElementById("js-headerButton");
+
+// ボタンをクリックした時の処理
+button.addEventListener("click", () => {
+  header.classList.toggle("is-open");
+});
+
+
 //問題・解答-雄月
 //tabの中身
 const $ph1TabTitle = document.getElementById('ph1-tabTitle');
@@ -95,4 +105,3 @@ $memberClick[3].addEventListener('click',function () {
 $memberClick[4].addEventListener('click',function () {
     $memberAnswer[4].classList.toggle('css-open');
 })
-
