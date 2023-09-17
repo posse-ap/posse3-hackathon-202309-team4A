@@ -1,0 +1,88 @@
+/* クイズ作るとこ */
+/* tab切り替え */
+.tab{
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.tab-nav {
+    display: flex;
+}
+.tab-navItem{
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    margin: 2px;
+}
+.tab-navItem.js-active {
+    background: #000;
+    color: #fff;
+}
+.tab-contents {
+    border: #000 1px solid; 
+}
+.tab-contentsItem {
+    display: none;
+}
+
+/* --ph1 */
+.ph1-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: solid #fff 2px;
+}
+.ph1-question {
+    padding: 5px;
+}
+.ph1-answer {
+    background-color: #fff;
+    display: none;
+}
+/* --ph2 */
+.ph2-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: solid #fff 2px;
+}
+.ph2-question {
+    padding: 5px;
+}
+.ph2-answer {
+    background-color: #fff;
+    display: none;
+}
+/* --member */
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: solid #fff 2px;
+}
+.member-question {
+    padding: 5px;
+}
+.member-answer {
+    background-color: #fff;
+    display: none;
+}
+
+.ph1-tab {
+    display: none;
+}
+.ph2-tab {
+    display: none;
+    background-color: cadetblue;
+}
+.member-tab {
+    display: none;
+    background-color: darkseagreen;
+}
+
+
+.is-open {
+    display: block;
+}
