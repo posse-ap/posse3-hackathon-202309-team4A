@@ -39,7 +39,7 @@ $ph2Click[4].addEventListener('click',function () {
 const $memberClick = document.querySelectorAll('.member-question');
 const $memberAnswer = document.querySelectorAll('.member-answer');
 $memberClick[0].addEventListener('click',function () {
-    $mmberAnswer[0].classList.toggle('is-open');
+    $memberAnswer[0].classList.toggle('is-open');
 })
 $memberClick[1].addEventListener('click',function () {
     $memberAnswer[1].classList.toggle('is-open');
@@ -64,17 +64,26 @@ const $ph2Tab = document.getElementById('ph2-tab');
 const $memberTab = document.getElementById('member-tab');
 
 $ph1TabTitle.addEventListener('click',function () {
-    $ph1Tab.classList.add('is-open');
+    $ph1Tab.classList.add('is-open',);
     $ph2Tab.classList.remove('is-open');
     $memberTab.classList.remove('is-open');
+    $ph1TabTitle.classList.add('js-active');
+    $ph2TabTitle.classList.remove('js-active');
+    $memberTabTitle.classList.remove('js-active');
 })
 $ph2TabTitle.addEventListener('click',function () {
     $ph1Tab.classList.remove('is-open');
     $ph2Tab.classList.add('is-open');
     $memberTab.classList.remove('is-open');
+    $ph1TabTitle.classList.remove('js-active');
+    $ph2TabTitle.classList.add('js-active');
+    $memberTabTitle.classList.remove('js-active');
 })
 $memberTabTitle.addEventListener('click',function () {
     $ph1Tab.classList.remove('is-open');
     $ph2Tab.classList.remove('is-open');
-    $memberTab.classList.add('is-open');
+    $memberTab.classList.add('is-open');    
+    $ph1TabTitle.classList.remove('js-active');
+    $ph2TabTitle.classList.remove('js-active');
+    $memberTabTitle.classList.add('js-active');
 })
