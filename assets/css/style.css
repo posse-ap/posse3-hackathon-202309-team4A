@@ -1,3 +1,4 @@
+
 /* headerの装飾 */
 
 
@@ -117,6 +118,23 @@
 }
 
 
+  /* footerの装飾 */
+.footer {
+    background: #997d67;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 12px;
+}
+
+  /* ボタン */
+.is-open {
+
+}
+
+
+
+
 
 /* クイズ作るとこ */
 /* tab切り替え */
@@ -214,16 +232,163 @@
 
 
 
-  /* footerの装飾 */
-.footer {
-    background: #997d67;
-    color: #fff;
-    font-size: 12px;
+
+/* クイズformのタイトル */
+/* .quizForm{
+    font-size: 40px;
+    color:black;
     text-align: center;
-    padding: 12px;
+    text-decoration: underline;
+} */
+
+/* 外枠 */
+/* form{
+    border: solid 1px #aaa;
+    height: max-content;
+    width:600px;
+    margin: 0 auto;
+    background-color: rgb(246, 244, 243);
+    border-radius: 10px;
+} */
+
+/* セレクトボックス */
+/* .group{
+    
 }
 
-  /* ボタン */
-.is-open {
+.category{
+    border:solid 1px #aaa;
+    margin: 50px;
+} */
 
+/* 問題と解答のボックス */
+/* textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+    margin: 90px;
+    text-align: left;
+}
+
+.question{
+    margin-right: 300px;
+} */
+
+/* 送信ボタン */
+/* .btn{
+    border: solid 1px #aaa;
+    text-align: center;
+    width: 100px;
+}
+.switch{
+    justify-content:  center;
+} */
+
+/* フォームのタイトル */
+.quiz-title{
+    font-size: 48px;
+    color:black;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+/* フォームの説明 */
+.quiz-description{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+/* 分類 */
+.quiz-checkbox{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* 選択肢 */
+.quiz-checkbox-1{
+    font-size: 16px;
+    margin-right: 24px;
+}
+
+.quiz-checkbox-2{
+    font-size: 16px;
+}
+
+.quiz-checkbox-3{
+    font-size: 16px;
+    margin-left: 24px;
+}
+
+.q-checkbox{
+    appearance: revert;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* フォーム全体 */
+.quiz-box{
+    margin-top: 16px;
+    border: solid 1px #aaa;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* 問題について */
+.quiz-question{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.question-content{
+    font-size: 24px;
+}
+
+.q-content{
+    border: solid 1px #aaa;
+    text-align: left;
+}
+
+
+/* 解答について */
+.quiz-answer{
+    margin-bottom: 24px;
+}
+
+.answer-content{
+    font-size: 24px;
+}
+
+.q-answer{
+    border: solid 1px #aaa;
+    text-align: left;
+}
+
+/* チェック項目について */
+.quiz-concent{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.quiz-concent-1{
+    margin-right: 24px;
+}
+
+.q-concent{
+    appearance: revert;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* 送信ボタン */
+.q-button{
+    border: solid 1px #aaa;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 32px;
 }
