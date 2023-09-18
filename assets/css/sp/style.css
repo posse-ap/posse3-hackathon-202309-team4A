@@ -36,6 +36,36 @@
 .header-buttonLine:nth-of-type(3) {
     top: 27px;
 }
+
+/* ヨッシー！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ */
+.quiz-form{
+    width: 100%;
 }
 
+.quiz-checkbox{
+    flex-direction: column;
+    display: flex;
+}
+.quiz-checkbox-1{
+    margin: auto 0;
+    margin-bottom: 16px;
+}
 
+.quiz-checkbox-2{
+    margin: auto 0;
+    margin-bottom: 16px;
+}
+
+.quiz-checkbox-3{
+    margin: auto 0;
+}
+
+.quiz-consent{
+    flex-direction: column;
+    display: flex;
+}
+.quiz-consent-1{
+    margin: auto 0;
+    margin-bottom: 16px;
+}
+}
