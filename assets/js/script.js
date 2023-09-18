@@ -195,6 +195,7 @@ const agreementCheckbox = document.getElementById("qu-consent-1");
 // 送信ボタンを取得
 const submitSwitch = document.getElementById("submit-switch");
 
+
 // チェックボックスをクリックした時
 agreementCheckbox.addEventListener("click", () => {
   // チェックされている場合
@@ -223,72 +224,25 @@ if (consentCheckbox.checked && permissionCheckbox.checked === true) {
 }
 });
 
-//console.logへの出力
 
-const btn = document.getElementById('submit-btn');
-btn.addEventListener('click', () => {
-const text = document.getElementById('q-content');
-console.log(text);
-});
+// ↓ここから根岸
 
 // 提出フォーム
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("submit-form");
-    const confirmation = document.getElementById("confirmation");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
         const name = document.getElementById("nameText").value;
+        const address = document.getElementById("address").value;
         const message = document.getElementById("message").value;
 
-        confirmation.innerHTML = `名前: ${name}<br>メッセージ: ${message}`;
+        console.log(`名前: ${name}, gitアドレス: ${address}, メッセージ: ${message}`);
         form.reset();
     });
-});document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("submit-form");
-    const confirmation = document.getElementById("confirmation");
-
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const message = document.getElementById("message").value;
-
-        confirmation.innerHTML = `名前: ${name}<br>メッセージ: ${message}`;
-        form.reset();
     });
-});
-
-// 提出レビュー
-document.addEventListener("DOMContentLoaded", function () {
-    const reviewForm = document.getElementById("review-form");
-    const evaluation = document.getElementById("evaluation");
-
-    reviewForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const reviewName = document.getElementById("review-nameText").value;
-        const comment = document.getElementById("comment").value;
-
-        evaluation.innerHTML = `名前: ${reviewName}<br>メッセージ: ${comment}`;
-        reviewForm.reset();
-    });
-});document.addEventListener("DOMContentLoaded", function () {
-    const reviewForm = document.getElementById("review-form");
-    const confirmation = document.getElementById("evaluation");
-
-    reviewForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const reviewName = document.getElementById("review-name").value;
-        const comment = document.getElementById("comment").value;
-
-        evaluation.innerHTML = `名前: ${reviewName}<br>コメント: ${comment}`;
-        reviewForm.reset();
-    });
-});
 
 // 星レビュー
 var stars = document.getElementsByClassName("star");
@@ -334,4 +288,20 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 }
 });
+// 提出レビュー
+document.addEventListener("DOMContentLoaded", function () {
+    const reviewForm = document.getElementById("review-form");
 
+    reviewForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const reviewName = document.getElementById("review-nameText").value;
+        const comment = document.getElementById("comment").value;
+
+        console.log( `名前: ${reviewName}, コメント: ${comment}`);
+        reviewForm.reset();
+    });
+});
+
+
+// ↑ここまで根岸
