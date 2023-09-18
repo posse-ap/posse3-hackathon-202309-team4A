@@ -2,11 +2,12 @@
 // ヘッダー・ボタンの要素を取得
 const header = document.getElementById("js-header");
 const button = document.getElementById("js-headerButton");
+console.log(button);
 
 // ボタンをクリックした時の処理
 button.addEventListener("click", () => {
   header.classList.toggle("is-open");
-});
+})
 
 
 //問題・解答-雄月

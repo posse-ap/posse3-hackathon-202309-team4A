@@ -1,3 +1,10 @@
+/* ここからちーちゃん */
+/* 全体 */
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
 
 /* headerの装飾 */
 
@@ -8,35 +15,42 @@
     top: 0;
     left: 0;
     right: 0;
-    align-items: center;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     z-index: 10000;
+    transition: background-color .3s linear;
+}
+.header__inner {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transform: translate(0, -50%);
+    /* display: flex; */
+    /* justify-content: flex-end; */
+}
+  .header-items {
     display: flex;
     justify-content: space-between;
-    transition: background-color .3s linear;
-  }
-.header__inner {
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
   }
-  .header__nav {
-    margin-left: auto;
 
-  }
   .header__nav__list {
     display: flex;
+    /* margin-right: auto; */
   }
   .header__nav__item + .header__nav__item {
     margin-left: 40px;
+    /* margin-right: auto; */
   }
   .header__nav__item__link {
     font-family: "Montserrat", sans-serif;
   }
 
-.header-nav {
+.header-link {
+    display: flex;
+    justify-content: flex-end;
+}
+/* .header-nav {
   position: fixed;
   inset: 0;
   background-color: #EAF6FD;
@@ -46,14 +60,15 @@
   gap: 0;
   padding: 120px 24px 40px;
   transition: visibility .3s linear, opacity .3s linear;
-}
+} */
 
 
 
   
 .header-logo {
     width: 100px;
-    /* ここを追記 */
+    display: flex;
+    justify-content: flex-start;
     z-index: 1;
   }
   
@@ -69,39 +84,26 @@
     width: 100%;
     align-items: center;
 }
-.header-ctaLink::before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: url(../../img/icon-line.svg) center center / contain no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-}
-.header-corporateLink {
-    color: #666666;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-.header-corporateLink::after {
-    content: '';
-    display: block;
-    width: 14px;
-    height: 14px;
-    background: url(../../img/icon-external-link.svg) center center / contain no-repeat;
-}
-.header-snsList {
-    margin-top: 24px;
+
+
+.news__card__image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 /*紹介文の装飾  */
 .introduction{
-    text-align: center;
-    font-size: 25px;
+    background: url(../../assets/img/POSSE③.jpg) center center / cover no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    margin-top: 40px;
+}
+.introduction-text{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 600;
     text-shadow: 0 0 10px #ffffff,
     0 0 20px #ffffff,
     0 0 30px #C8E2E6,
@@ -109,12 +111,15 @@
     0 0 50px #C8E2E6,
     0 0 60px #C8E2E6,
     0 0 70px #C8E2E6;
-    color: #000000;
-    margin-top: 90px;
+    color: #333;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .font_test{
-    color: #F44336;
+    color: orange;
 }
 
 
@@ -127,12 +132,13 @@
     padding: 12px;
 }
 
+
   /* ボタン */
 .is-open {
 
 }
 
-
+/* ここまでちーちゃん */
 
 
 
