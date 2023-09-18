@@ -1,42 +1,69 @@
 @media (max-width: 768px) {
+/* ちーちゃん発 */
+.header-link {
+    position: fixed;
+    inset: 0;
+    background-color: #F7F9FB;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 120px 24px 40px;
+    transition: visibility .3s linear, opacity .3s linear;
+}
+.introduction-text {
+    font-size: 12px;
+}
 
-    .header-nav {
-        position: fixed;
-        inset: 0;
-        background-color: #F7F9FB;
-        visibility: hidden;
-        opacity: 0;
-        flex-direction: column;
-        gap: 0;
-        padding: 120px 24px 40px;
-        transition: visibility .3s linear, opacity .3s linear;
-    }
 
-    .header.is-open .header-buttonLine:nth-of-type(1) {
-        transform: translateX(-50%) rotate(45deg);
-        top: 20px;
-    }
+.header__nav__list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .header-link {
+      visibility: hidden;
+  }
+.header.is-open .header-link {
+    visibility: visible;
+    opacity: 1;
+  }
 
-    .header.is-open .header-buttonLine:nth-of-type(2) {
-        opacity: 0;
-    }
 
-    .header.is-open .header-buttonLine:nth-of-type(3) {
-        transform: translateX(-50%) rotate(-45deg);
-        top: 20px;
-    }
+.header-button {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+.header-buttonLine {
+    display: block;
+    color:#0071bc;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    border-top: solid 2px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  .header-buttonLine:nth-of-type(1) {
+    top: 13px;
+  }
+  
+  .header-buttonLine:nth-of-type(2) {
+    top: 20px;
+  }
+  
+  .header-buttonLine:nth-of-type(3) {
+    top: 27px;
+  }
+.header.is-open .header-buttonLine:nth-of-type(1) {
+    transform: translateX(-50%) rotate(45deg);
+    top: 20px;
 
-    .header-buttonLine:nth-of-type(1) {
-        top: 13px;
-    }
-
-    .header-buttonLine:nth-of-type(2) {
-        top: 20px;
-    }
-
-    .header-buttonLine:nth-of-type(3) {
-        top: 27px;
-    }
     /* ↓ここから根岸 */
 /* 提出フォーム */
 /* レビューフォーム */
@@ -91,6 +118,7 @@
     display: flex;
 }
 
+/* ちーちゃん尾張 */
 
 
 /* ここから雄月 */
