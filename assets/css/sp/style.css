@@ -1,41 +1,82 @@
 @media (max-width: 768px) {
 
-.header-nav {
-    position: fixed;
-    inset: 0;
-    background-color: #F7F9FB;
-    visibility: hidden;
-    opacity: 0;
-    flex-direction: column;
-    gap: 0;
-    padding: 120px 24px 40px;
-    transition: visibility .3s linear, opacity .3s linear;
+    .header-nav {
+        position: fixed;
+        inset: 0;
+        background-color: #F7F9FB;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 24px 40px;
+        transition: visibility .3s linear, opacity .3s linear;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(1) {
+        transform: translateX(-50%) rotate(45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(3) {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(1) {
+        top: 13px;
+    }
+
+    .header-buttonLine:nth-of-type(2) {
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(3) {
+        top: 27px;
+    }
+    /* ↓ここから根岸 */
+/* 提出フォーム */
+/* レビューフォーム */
+.submit-body,
+.review-body
+{
+    margin: 0;
 }
-.header.is-open .header-buttonLine:nth-of-type(1) {
-    transform: translateX(-50%) rotate(45deg);
-    top: 20px;
+.submit-title,
+.review-title {
+    font-size: 28px;
+    margin: 0 45%;
 }
 
-.header.is-open .header-buttonLine:nth-of-type(2) {
-    opacity: 0;
+.user-name {
+    text-align: center;
+    padding-top: 0;
 }
 
-.header.is-open .header-buttonLine:nth-of-type(3) {
-    transform: translateX(-50%) rotate(-45deg);
-    top: 20px;
+.submit-formLabel,
+.review-formLabel {
+    height: 60px;
+    padding: 3px;
+    z-index: 1;
 }
 
-.header-buttonLine:nth-of-type(1) {
-    top: 13px;
+.submit-formInput,
+.review-formInput,
+.submit-textarea,
+.review-textarea {
+    width: 100%;
+    margin-right: auto;
+    z-index: 0;
 }
 
-.header-buttonLine:nth-of-type(2) {
-    top: 20px;
+/* 星 */
+.star {
+    font-size: 200%;
 }
 
-.header-buttonLine:nth-of-type(3) {
-    top: 27px;
+/* ↑ここまで根岸 */
 }
-}
-
 
