@@ -36,6 +36,30 @@
 .header-buttonLine:nth-of-type(3) {
     top: 27px;
 }
+
+
+/* ここから雄月 */
+
+.tab-nav {
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.tab-navItem {
+    width: 70%;
+    border-radius: 5px;
+    overflow: hidden;
+    left: 50%;
+    margin-bottom: 30px;
+}
+.tab-number2 {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 
+/* ここまで雄月 */
+
+
+
+}
