@@ -1,4 +1,6 @@
+
 /* ↓ここからちーちゃん */
+
 /* headerの装飾 */
 
 
@@ -129,12 +131,13 @@
 
   /* ボタン */
 .is-open {
-
+    
 }
 /* ↑ここまでちーちゃん */
 
 
 /* ↓ここからゆづき */
+
 
 /* クイズ作るとこ */
 /* tab切り替え */
@@ -233,6 +236,7 @@
 
 /* ↓ここからヨッシー */
 
+
 /* クイズformのタイトル */
 /* .quizForm{
     font-size: 40px;
@@ -286,11 +290,16 @@
     justify-content:  center;
 } */
 
+/* クイズフォームのセクション */
+.quiz-form{
+    background-color: #EAF6FD;
+}
 /* フォームのタイトル */
 .quiz-title{
-    font-size: 48px;
+    font-size: 40px;
     color:black;
     margin-left: 20px;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -299,6 +308,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-left: 20px;
+    text-align: center;
     margin-top: 24px;
 }
 
@@ -309,25 +319,30 @@
 }
 
 /* 選択肢 */
+.quiz-checkbox{
+    text-align: center;
+}
 .quiz-checkbox-1{
-    font-size: 16px;
-    margin-right: 24px;
+    font-size: 24px;
+    margin-right: 32px;
 }
 
 .quiz-checkbox-2{
-    font-size: 16px;
+    font-size: 24px;
+    margin-right: 32px;
+    margin-left: 32px;
 }
 
 .quiz-checkbox-3{
-    font-size: 16px;
-    margin-left: 24px;
+    font-size: 24px;
+    margin-left: 32px;
 }
 
 .q-checkbox{
     appearance: revert;
     height: 20px;
     width: 20px;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 /* フォーム全体 */
@@ -335,8 +350,11 @@
     margin-top: 16px;
     border: solid 1px #aaa;
     border-radius: 10px;
-    width: 600px;
-    margin: 0 auto;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.quiz-input {
+    display: none;
 }
 
 /* 問題について */
@@ -352,6 +370,7 @@
 .q-content{
     border: solid 1px #aaa;
     text-align: left;
+    width: 50vw;
 }
 
 
@@ -367,18 +386,19 @@
 .q-answer{
     border: solid 1px #aaa;
     text-align: left;
+    width: 50vw;
 }
 
 /* チェック項目について */
-.quiz-concent{
+.quiz-consent{
     margin-bottom: 24px;
     text-align: center;
 }
-.quiz-concent-1{
+.quiz-consent-1{
     margin-right: 24px;
 }
 
-.q-concent{
+.q-consent{
     appearance: revert;
     height: 20px;
     width: 20px;
@@ -390,7 +410,12 @@
     border: solid 1px #aaa;
     margin-top: 8px;
     margin-bottom: 8px;
-    font-size: 32px;
+    font-size: 24px;
+    background-color: #997d67;
+    color: #fff;
+}
+:disabled{
+    display: none;
 }
 /* ↑ここまでヨッシー */
 
@@ -402,6 +427,7 @@
     margin-bottom: 100px;
     position: relative;
 }
+
 /* 提出フォーム */
 /* レビューフォーム */
 

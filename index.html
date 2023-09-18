@@ -12,6 +12,40 @@
 </head>
 
 <body>
+
+    <header class="header" id="js-header">
+        <div class="inner header__inner">
+        <h1 class="header__logo"><img src="./assets/img/logo.svg" alt="POSSE➂"></h1>
+        <nav class="header__nav">
+        <ul class="header__nav__list">
+            <li class="header__nav__item">
+            <a href="#ph1" class="header__nav__item__link">Ph1</a>
+            </li>
+            <li class="header__nav__item">
+            <a href="#ph2" class="header__nav__item__link">Ph2</a>
+            </li>
+            <li class="header__nav__item">
+            <a href="#member" class="header__nav__item__link">Member</a>
+            </li>
+        </ul>
+        <button class="header-button" id="js-headerButton">
+            <span class="header-buttonLine"></span>
+            <span class="header-buttonLine"></span>
+            <span class="header-buttonLine"></span>
+        </button>
+        </nav>
+    </div>
+    </header>
+    <main>
+    <section class="introduction">
+        私達「仮免受かりました」はPOSSE➂を活性化するためにこのサイトを作りました。
+        <br><span class="font_test">活性化</span>とは<span class="font_test">プログラミング力の向上</span>と<span class="font_test">人格力(深い友達関係の構築)</span>の両輪で進んでいくことを指します。
+        <br>「活性化」を達成するために、このサイトでは「ph確認クイズ」と「友達関係深堀クイズ」の二つに分けました。
+        <br>「ph確認クイズ」とは今まで自分のやってきたカリキュラムのアウトプットの場として活用できます。
+        <br>「友達関係深堀クイズ」とは仲いいと思ってた仲間の意外な一面が知ることが出来ます。
+    </section>
+
+
     <header id="js-header" class="header">
         <div class="inner header__inner">
             <h1 class="header__logo"><img src="./assets/img/logo.svg" alt="POSSE➂"></h1>
@@ -49,6 +83,7 @@
         </section>
 
 
+
         <section>
             <div class="tab" id="js-tab">
                 <div class="tab-nav">
@@ -59,6 +94,17 @@
 
                 <div class="tab-contents">
                     <div class="tab-navItem">
+
+                    <div id="ph1-tab" class="ph1-tab css-open">
+                        <div class="ph1-allQuiz css-open">
+                            <div class="ph1-quiz">
+                                <div class="ph1-quwstion">問題１</div>
+                                <div class="answer-list">
+                                    <button class="answer">解答１</button>
+                                    <button class="answer">解答２</button>
+                                    <button class="answer">解答３</button>
+                                    <button class="answer">解答４</button>
+
                         <div id="ph1-tab" class="ph1-tab css-open">
 
                             <div class="ph1-allQuiz css-open">
@@ -70,6 +116,7 @@
                                         <button class="answer">解答３</button>
                                         <button class="answer">解答４</button>
                                     </div>
+
                                 </div>
                                 <div class="ph1-quiz">
                                     <div class="ph1-quwstion">問題２</div>
@@ -131,6 +178,30 @@
                             </div>
                         </div>
 
+
+                        <div class="ph1-list">
+                            <button class="ph1-question">問題１</button>
+                            <div class="ph1-answer">解答１</div>
+                        </div>
+                        <div class="ph1-list">
+                            <button class="ph1-question">問題２</button>
+                            <div class="ph1-answer">解答２</div>
+                        </div>
+                        <div class="ph1-list">
+                            <button class="ph1-question">問題２</button>
+                            <div class="ph1-answer">解答２</div>
+                        </div>
+                        <div class="ph1-list">
+                            <button class="ph1-question">問題３</button>
+                            <div class="ph1-answer">解答３</div>
+                        </div>
+                        <div class="ph1-list">
+                            <button class="ph1-question">問題４</button>
+                            <div class="ph1-answer">解答４</div>
+                        </div>
+                    </div>
+
+
                         <div id="ph2-tab" class="ph2-tab">
                             <div class="ph2-allQuiz">
                                 <div class="ph2-quiz">
@@ -179,9 +250,44 @@
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="ph2-list">
+                            <button class="ph2-question">問題１</button>
+                            <div class="ph2-answer">解答１</div>
+                        </div>
+                        <div class="ph2-list">
+                            <button class="ph2-question">問題２</button>
+                            <div class="ph2-answer">解答２</div>
+                        </div>
+                        <div class="ph2-list">
+                            <button class="ph2-question">問題３</button>
+                            <div class="ph2-answer">解答３</div>
+                        </div>
+                        <div class="ph2-list">
+                            <button class="ph2-question">問題４</button>
+                            <div class="ph2-answer">解答４</div>
+                        </div>
+                        <div class="ph2-list">
+                            <button class="ph2-question">問題５</button>
+                            <div class="ph2-answer">解答５</div>
+                        </div>
+                    </div>
+
+                <div id="member-tab" class="member-tab">
+                    <div class="member-allQuiz">
+                        <div class="member-quiz">
+                            <div class="member-quwstion">問題１</div>
+                            <div class="answer-list">
+                                <button class="answer">解答１</button>
+                                <button class="answer">解答２</button>
+                                <button class="answer">解答３</button>
+                                <button class="answer">解答４</button>
+
                             <div class="ph2-list">
                                 <button class="ph2-question">問題１</button>
                                 <div class="ph2-answer">解答１</div>
+
                             </div>
                             <div class="ph2-list">
                                 <button class="ph2-question">問題２</button>
@@ -278,6 +384,7 @@
 
 
 
+
         <!-- <section>
             <h2 class="quizForm">クイズform</h2>
             <form action="">
@@ -306,6 +413,7 @@
                 </div>
             </form>
         </section> -->
+
         <section class="quiz-form">
             <h2 class="quiz-title">Quiz Form</h2>
             <p class="quiz-description">チェックを入れてください（入力後、フォームを表示します！）</p>
@@ -320,6 +428,84 @@
                     <input class="q-checkbox" type="radio" id="checkbox-3" name="category">member
                 </label>
             </div>
+
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputA">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="q-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="q-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="q-consent-1"/>URLの添付
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="submit-btn" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputB">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="qu-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="qu-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="qu-consent-1"/>URLの添付
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="submit-switch" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputC">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="que-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="que-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="que-consent-1"/>URLの添付
+                            </label>
+                            <label class="quiz-consent-2" for="q-consent-2">
+                                <input class="q-consent" type="checkbox" name="consent" id="q-consent-2"/> 個人情報掲載の許諾
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="hand-in-btn" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <!-- 提出form -->
+            <br action="" id="submit-form">
+                    <div class="submit-head">
+                        <h2 class="submit-title">提出フォーム</h2>
+
             <form class="quiz-box" action="">
                 <div class="quiz-question">
                     <label class="question-content" for="q-content">問題</label>
@@ -365,6 +551,7 @@
                     <div class="user-text">
                         <label class="submit-formLabel" for="message">message:</label>
                         <textarea id="message" class="submit-textarea" name="message" required></textarea>
+
                     </div>
                 <div class="user-button"><button class="submit-button" type="submit">Submission</button></div>
                 </div>
@@ -386,6 +573,19 @@
                 <div class="user-text">
                     <label class="review-formLabel" for="comment">comment:</label>
                     <textarea id="comment" class="review-textarea" name="comment" required></textarea>
+
+                    <div id="stars">
+                        <span class="star" data-star="1">★</span>
+                        <span class="star" data-star="2">★</span>
+                        <span class="star" data-star="3">★</span>
+                        <span class="star" data-star="4">★</span>
+                        <span class="star" data-star="5">★</span>
+                    </div>
+                    <button class="review-button" type="submit">評価</button>
+                </form>
+                <div id="evaluation"></div>
+            </section>
+
                 </div>
                 <div id="stars">
                     <span class="star" data-star="1">★</span>
@@ -399,6 +599,7 @@
             </form>
             <div id="evaluation"></div>
         </section>
+
     </main>
     <footer class="footer">
         <small lang="en">©︎ anti-pattern.inc</small>
