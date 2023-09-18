@@ -90,6 +90,23 @@
     flex-direction: column;
     display: flex;
 }
+
+
+
+/* ここから雄月 */
+
+.tab-nav {
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.tab-navItem {
+    width: 70%;
+    border-radius: 5px;
+    overflow: hidden;
+    left: 50%;
+    margin-bottom: 30px;
+
 .quiz-checkbox-1{
     margin: auto 0;
     margin-bottom: 16px;
@@ -98,7 +115,15 @@
 .quiz-checkbox-2{
     margin: auto 0;
     margin-bottom: 16px;
+
 }
+.tab-number2 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* ここまで雄月 */
 
 
 .quiz-checkbox-3{
@@ -113,4 +138,5 @@
     margin: auto 0;
     margin-bottom: 16px;
 }
+
 }
