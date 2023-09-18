@@ -10,33 +10,33 @@
     <link rel="stylesheet" href="./assets/css/sp/style.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
+
 <body>
-    <header id="js-header" class="header">
+    <header class="header" id="js-header">
         <div class="inner header__inner">
         <h1 class="header__logo"><img src="./assets/img/logo.svg" alt="POSSE➂"></h1>
         <nav class="header__nav">
-          <ul class="header__nav__list">
+        <ul class="header__nav__list">
             <li class="header__nav__item">
-              <a href="#ph1" class="header__nav__item__link">Ph1</a>
+            <a href="#ph1" class="header__nav__item__link">Ph1</a>
             </li>
             <li class="header__nav__item">
-              <a href="#ph2" class="header__nav__item__link">Ph2</a>
+            <a href="#ph2" class="header__nav__item__link">Ph2</a>
             </li>
             <li class="header__nav__item">
-              <a href="#member" class="header__nav__item__link">Member</a>
+            <a href="#member" class="header__nav__item__link">Member</a>
             </li>
-          </ul>
-          <button id="js-headerButton" class="header-button">
+
+        </ul>
+        <button class="header-button" id="js-headerButton">
             <span class="header-buttonLine"></span>
             <span class="header-buttonLine"></span>
             <span class="header-buttonLine"></span>
-          </button>
+        </button>
         </nav>
-      </div>
+    </div>
     </header>
     <main>
-
-       
 
     <section class="introduction">
         私達「仮免受かりました」はPOSSE➂を活性化するためにこのサイトを作りました。
@@ -44,9 +44,47 @@
         <br>「活性化」を達成するために、このサイトでは「ph確認クイズ」と「友達関係深堀クイズ」の二つに分けました。
         <br>「ph確認クイズ」とは今まで自分のやってきたカリキュラムのアウトプットの場として活用できます。
         <br>「友達関係深堀クイズ」とは仲いいと思ってた仲間の意外な一面が知ることが出来ます。
+    </section>
+
+
+    <header id="js-header" class="header">
+        <div class="inner header__inner">
+            <h1 class="header__logo"><img src="./assets/img/logo.svg" alt="POSSE➂"></h1>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="#ph1" class="header__nav__item__link">Ph1</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#ph2" class="header__nav__item__link">Ph2</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#member" class="header__nav__item__link">Member</a>
+                    </li>
+                </ul>
+                <button id="js-headerButton" class="header-button">
+                    <span class="header-buttonLine"></span>
+                    <span class="header-buttonLine"></span>
+                    <span class="header-buttonLine"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+
+
+        　　　 <section class="introduction">
+            私達「仮免受かりました」はPOSSE➂を活性化するためにこのサイトを作りました。
+            <br><span class="font_test">活性化</span>とは<span class="font_test">プログラミング力の向上</span>と<span
+                class="font_test">人格力(深い友達関係の構築)</span>の両輪で進んでいくことを指します。
+            <br>「活性化」を達成するために、このサイトでは「ph確認クイズ」と「友達関係深堀クイズ」の二つに分けました。
+            <br>「ph確認クイズ」とは今まで自分のやってきたカリキュラムのアウトプットの場として活用できます。
+            <br>「友達関係深堀クイズ」とは仲いいと思ってた仲間の意外な一面が知ることが出来ます。
         </section>
 
-      
+
+
         <section>
             <div id="posse-quiz" class="quiz-firstTitle">POSSE Quiz</div>
             <div class="tab" id="js-tab">
@@ -81,7 +119,6 @@
                     </div>
 
                     <div id="ph2-tab" class="ph2-tab tab-quizItem">
-                        
                         <div class="ph2-list">
                             <button class="ph2-question">問題１</button>
                             <div class="ph2-answer">解答１</div>
@@ -129,9 +166,10 @@
                 </div>
             </div>
 
-            </section>
+        </section>
 
-       
+
+
 
         <!-- <section>
             <h2 class="quizForm">クイズform</h2>
@@ -148,19 +186,20 @@
                 <div class="query">
                     <label class="category" for="question">問題</label>
                     <input type="textarea" id="Question" name="Question" > -->
-                    <!-- <textarea name="question" id="question" cols="30" rows="10"></textarea>
+        <!-- <textarea name="question" id="question" cols="30" rows="10"></textarea>
                 </div>
                 <div class="reply">
                     <label class="answer" for="answer">解答</label> -->
-                    <!-- <input type="textarea" id="answer" name="answer"> -->
-                    <!-- <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
+        <!-- <input type="textarea" id="answer" name="answer"> -->
+        <!-- <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
                 </div> -->
-                <!-- <input type="submit" value="送信する"> -->
-                <!-- <div class="btn">
+        <!-- <input type="submit" value="送信する"> -->
+        <!-- <div class="btn">
                     <button class="switch">送信する</button>
                 </div>
             </form>
         </section> -->
+
         <section class="quiz-form">
             <h2 class="quiz-title">Quiz Form</h2>
             <p class="quiz-description">チェックを入れてください（入力後、フォームを表示します！）</p>
@@ -172,55 +211,155 @@
                     <input class="q-checkbox" type="radio" id="checkbox-2" name="category">ph 2
                 </label>
                 <label class="quiz-checkbox-3" for="checkbox-3">
-                    <input class="q-checkbox" type="radio"  id="checkbox-3" name="category">member
+                    <input class="q-checkbox" type="radio" id="checkbox-3" name="category">member
                 </label>
             </div>
-            <form class="quiz-box" action="">
-                <div class="quiz-question">
-                    <label class="question-content" for="q-content">問題</label>
-                        <textarea class="q-content" name="q-content" id="q-content" cols="60" rows="10"></textarea>
-                </div>
-                <div class="quiz-answer">
-                    <label class="answer-content" for="q-answer">解答</label>
-                        <textarea class="q-answer" name="q-answer" id="q-answer" cols="60" rows="10"></textarea>
-                </div>
-                <div class="quiz-concent">
-                    <label class="quiz-concent-1" for="q-concent-1">
-                        <input class="q-concent" type="checkbox" name="concent" id="q-concent-1"/>URLの添付
-                    </label>
-                    <label class="quiz-concent-2" for="q-concent-2">
-                        <input class="q-concent" type="checkbox" name="concent" id="q-concent-2"/> 個人情報掲載の許諾
-                    </label>
-                </div>
-                <div class="quiz-button">
-                        <button class="q-button">送信する</button>
-                </div>
-            </form>
+
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputA">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="q-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="q-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="q-consent-1"/>URLの添付
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="submit-btn" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputB">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="qu-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="qu-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="qu-consent-1"/>URLの添付
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="submit-switch" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="quiz-input">
+                <form class="quiz-box" action="">
+                    <section id="inputC">
+                        <div class="quiz-question">
+                            <label class="question-content" for="q-content">問題</label>
+                                <textarea class="q-content" name="q-content" id="que-content" ></textarea>
+                        </div>
+                        <div class="quiz-answer">
+                            <label class="answer-content" for="q-answer">解答</label>
+                                <textarea class="q-answer" name="q-answer" id="que-answer" ></textarea>
+                        </div>
+                        <div class="quiz-consent">
+                            <label class="quiz-consent-1" for="q-consent-1">
+                                <input class="q-consent" type="checkbox" name="consent" id="que-consent-1"/>URLの添付
+                            </label>
+                            <label class="quiz-consent-2" for="q-consent-2">
+                                <input class="q-consent" type="checkbox" name="consent" id="q-consent-2"/> 個人情報掲載の許諾
+                            </label>
+                        </div>
+                        <div class="quiz-button">
+                                <button class="q-button" id="hand-in-btn" disabled>送信する</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
         </section>
 
- <section>
+        <section>
             <!-- 提出form -->
             <br action="" id="submit-form">
                     <div class="submit-head">
                         <h2 class="submit-title">提出フォーム</h2>
+
+            <form class="quiz-box" action="">
+                <div class="quiz-question">
+                    <label class="question-content" for="q-content">問題</label>
+                    <textarea class="q-content" name="q-content" id="q-content" cols="60" rows="10"></textarea>
+                </div>
+                <div class="quiz-answer">
+                    <label class="answer-content" for="q-answer">解答</label>
+                    <textarea class="q-answer" name="q-answer" id="q-answer" cols="60" rows="10"></textarea>
+                </div>
+                <div class="quiz-concent">
+                    <label class="quiz-concent-1" for="q-concent-1">
+                        <input class="q-concent" type="checkbox" name="concent" id="q-concent-1" />URLの添付
+                    </label>
+                    <label class="quiz-concent-2" for="q-concent-2">
+                        <input class="q-concent" type="checkbox" name="concent" id="q-concent-2" /> 個人情報掲載の許諾
+                    </label>
+                </div>
+                <div class="quiz-button">
+                    <button class="q-button">送信する</button>
+                </div>
+            </form>
+        </section>
+
+<!-- 根岸担当 -->
+<div class="our-introduction">Introduction</div>
+        <!-- 提出form -->
+        <section class="submit user-act">
+            <form action="" id="submit-form">
+                <div class="submit-head">
+                    <h2 class="submit-title">Submission Form</h2>
+                </div>
+                <div class="submit-body">
+                    <div class="user-name">
+                        <label class="submit-formLabel" for="name">name:</label>
+                        <input type="text" id="nameText" class="submit-formInput" name="name" required autocomplete
+                            attributes>
                     </div>
-                <label class="submit-formLabel" for="name">名前:</label>
-                <input type="text" id="nameText" class="submit-formInput" name="name" required autocomplete attributes>
-                <label class="submit-formLabel" for="message">メッセージ:</label>
-                <textarea id="message" class="submit-textarea" name="message" required></textarea></br>
-                <button class="submit-button" type="submit">提出</button>
+                    <div class="user-name">
+                        <label class="submit-formLabel" for="name">git address:</label>
+                        <input type="url" id="address" class="submit-formInput user-gitEmpty" name="name" required autocomplete
+                            attributes>
+                    </div>
+                    <div class="user-text">
+                        <label class="submit-formLabel" for="message">message:</label>
+                        <textarea id="message" class="submit-textarea" name="message" required></textarea>
+
+                    </div>
+                <div class="user-button"><button class="submit-button" type="submit">Submission</button></div>
+                </div>
             </form>
             <div id="confirmation"></div>
-            <section>
-                <!-- 提出レビュー -->
-                <form action="" id="review-form">
-                    <div class="review-head">
-                        <h2 class="review-title">評価フォーム</h2>
-                    </div>
-                    <label class="review-formLabel" for="review-name">名前:</label>
-                    <input type="text" id="review-nameText" class="review-formInput" name="review-name" required autocomplete attributes>
-                    <label class="review-formLabel" for="comment">コメント:</label>
+        </section>
+        <!-- 提出レビュー -->
+        <section class="review user-act">
+            <form action="" id="review-form">
+                <div class="review-head">
+                    <h2 class="review-title">Evaluation Form</h2>
+                </div>
+                <div class="review-body">
+                <div class="user-name">
+                    <label class="review-formLabel" for="review-name">name:</label>
+                    <input type="text" id="review-nameText" class="review-formInput" name="review-name" required
+                        autocomplete attributes>
+                </div>
+                <div class="user-text">
+                    <label class="review-formLabel" for="comment">comment:</label>
                     <textarea id="comment" class="review-textarea" name="comment" required></textarea>
+
                     <div id="stars">
                         <span class="star" data-star="1">★</span>
                         <span class="star" data-star="2">★</span>
@@ -230,8 +369,22 @@
                     </div>
                     <button class="review-button" type="submit">評価</button>
                 </form>
-                <div id="evaluation"></div>     
+                <div id="evaluation"></div>
             </section>
+
+                </div>
+                <div id="stars">
+                    <span class="star" data-star="1">★</span>
+                    <span class="star" data-star="2">★</span>
+                    <span class="star" data-star="3">★</span>
+                    <span class="star" data-star="4">★</span>
+                    <span class="star" data-star="5">★</span>
+                </div>
+                <div class="user-button"><button class="review-button" type="submit">Evaluation</button></div>
+            </div>
+            </form>
+            <div id="evaluation"></div>
+        </section>
 
     </main>
     <footer class="footer">

@@ -1,41 +1,96 @@
 @media (max-width: 768px) {
 
-.header-nav {
-    position: fixed;
-    inset: 0;
-    background-color: #F7F9FB;
-    visibility: hidden;
-    opacity: 0;
+    .header-nav {
+        position: fixed;
+        inset: 0;
+        background-color: #F7F9FB;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 24px 40px;
+        transition: visibility .3s linear, opacity .3s linear;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(1) {
+        transform: translateX(-50%) rotate(45deg);
+        top: 20px;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .header.is-open .header-buttonLine:nth-of-type(3) {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(1) {
+        top: 13px;
+    }
+
+    .header-buttonLine:nth-of-type(2) {
+        top: 20px;
+    }
+
+    .header-buttonLine:nth-of-type(3) {
+        top: 27px;
+    }
+    /* ↓ここから根岸 */
+/* 提出フォーム */
+/* レビューフォーム */
+.submit-body,
+.review-body
+{
+    margin: 0;
+}
+.submit-title,
+.review-title {
+    font-size: 28px;
+    margin: 0 45%;
+}
+
+.user-name {
+    text-align: center;
+    padding-top: 0;
+}
+
+.submit-formLabel,
+.review-formLabel {
+    height: 60px;
+    padding: 3px;
+    z-index: 1;
+}
+
+.submit-formInput,
+.review-formInput,
+.submit-textarea,
+.review-textarea {
+    width: 100%;
+    margin-right: auto;
+    z-index: 0;
+}
+
+/* 星 */
+.star {
+    font-size: 200%;
+}
+
+/* ↑ここまで根岸 */
+}
+
+
+/* ヨッシー！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ */
+.quiz-form{
+    width: 100%;
+}
+
+.quiz-checkbox{
     flex-direction: column;
-    gap: 0;
-    padding: 120px 24px 40px;
-    transition: visibility .3s linear, opacity .3s linear;
-}
-.header.is-open .header-buttonLine:nth-of-type(1) {
-    transform: translateX(-50%) rotate(45deg);
-    top: 20px;
+    display: flex;
 }
 
-.header.is-open .header-buttonLine:nth-of-type(2) {
-    opacity: 0;
-}
-
-.header.is-open .header-buttonLine:nth-of-type(3) {
-    transform: translateX(-50%) rotate(-45deg);
-    top: 20px;
-}
-
-.header-buttonLine:nth-of-type(1) {
-    top: 13px;
-}
-
-.header-buttonLine:nth-of-type(2) {
-    top: 20px;
-}
-
-.header-buttonLine:nth-of-type(3) {
-    top: 27px;
-}
 
 
 /* ここから雄月 */
@@ -51,6 +106,16 @@
     overflow: hidden;
     left: 50%;
     margin-bottom: 30px;
+
+.quiz-checkbox-1{
+    margin: auto 0;
+    margin-bottom: 16px;
+}
+
+.quiz-checkbox-2{
+    margin: auto 0;
+    margin-bottom: 16px;
+
 }
 .tab-number2 {
     margin-right: 0;
@@ -61,5 +126,17 @@
 /* ここまで雄月 */
 
 
+.quiz-checkbox-3{
+    margin: auto 0;
+}
+
+.quiz-consent{
+    flex-direction: column;
+    display: flex;
+}
+.quiz-consent-1{
+    margin: auto 0;
+    margin-bottom: 16px;
+}
 
 }

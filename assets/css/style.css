@@ -1,5 +1,7 @@
 /* ここからちーちゃん */
 
+/* ↓ここからちーちゃん */
+
 /* headerの装飾 */
 .header {
     position: fixed;
@@ -128,12 +130,13 @@
 
   /* ボタン */
 .is-open {
-
+    
 }
+/* ↑ここまでちーちゃん */
 
 /* ここまでちーちゃん */
 
-
+/* ↓ここからゆづき */
 
 /* ここからゆづき */
 .quiz-firstTitle {
@@ -237,9 +240,8 @@
     display: block;
 }
 
-/* ここまでゆづき */
 
-
+/* ↓ここからヨッシー */
 
 /* ここからよっしー */
 
@@ -296,11 +298,16 @@
     justify-content:  center;
 } */
 
+/* クイズフォームのセクション */
+.quiz-form{
+    background-color: #EAF6FD;
+}
 /* フォームのタイトル */
 .quiz-title{
-    font-size: 48px;
+    font-size: 40px;
     color:black;
     margin-left: 20px;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -309,6 +316,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-left: 20px;
+    text-align: center;
     margin-top: 24px;
 }
 
@@ -319,25 +327,30 @@
 }
 
 /* 選択肢 */
+.quiz-checkbox{
+    text-align: center;
+}
 .quiz-checkbox-1{
-    font-size: 16px;
-    margin-right: 24px;
+    font-size: 24px;
+    margin-right: 32px;
 }
 
 .quiz-checkbox-2{
-    font-size: 16px;
+    font-size: 24px;
+    margin-right: 32px;
+    margin-left: 32px;
 }
 
 .quiz-checkbox-3{
-    font-size: 16px;
-    margin-left: 24px;
+    font-size: 24px;
+    margin-left: 32px;
 }
 
 .q-checkbox{
     appearance: revert;
     height: 20px;
     width: 20px;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 /* フォーム全体 */
@@ -345,8 +358,11 @@
     margin-top: 16px;
     border: solid 1px #aaa;
     border-radius: 10px;
-    width: 600px;
-    margin: 0 auto;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.quiz-input {
+    display: none;
 }
 
 /* 問題について */
@@ -362,6 +378,7 @@
 .q-content{
     border: solid 1px #aaa;
     text-align: left;
+    width: 50vw;
 }
 
 
@@ -377,18 +394,19 @@
 .q-answer{
     border: solid 1px #aaa;
     text-align: left;
+    width: 50vw;
 }
 
 /* チェック項目について */
-.quiz-concent{
+.quiz-consent{
     margin-bottom: 24px;
     text-align: center;
 }
-.quiz-concent-1{
+.quiz-consent-1{
     margin-right: 24px;
 }
 
-.q-concent{
+.q-consent{
     appearance: revert;
     height: 20px;
     width: 20px;
@@ -400,16 +418,39 @@
     border: solid 1px #aaa;
     margin-top: 8px;
     margin-bottom: 8px;
-    font-size: 32px;
+    font-size: 24px;
+    background-color: #997d67;
+    color: #fff;
 }
+
 /* ここまでよっしー */
 
 
 
 /* ここから根岸 */
 
+:disabled{
+    display: none;
+}
+/* ↑ここまでヨッシー */
+
+
+/* ↓ここから根岸 */
+.user-act {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+
 /* 提出フォーム */
 /* レビューフォーム */
+
+.our-introduction{
+    font-size: 40px;
+    font-weight: bold;
+}
 #submit-form,
 #review-form{
     margin: 0 auto;
@@ -425,29 +466,30 @@
     margin-bottom: 10px;
 }
 
-.submit-button,
-.review-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 .submit-head,
 .review-head {
     -webkit-border-radius: 6px 6px 0px 0px;
     -moz-border-radius: 6px 6px 0px 0px;
     border-radius: 6px 6px 0px 0px;
-    background-color: #2ABCA7;
-    color: #FAFAFA;
 }
-
+.submit-body,
+.review-body
+{
+    margin: 0 15%;
+}
 .submit-title,
 .review-title {
-    text-align: center;
+    width: 100%;
+    display: block;
     padding: 18px 0 18px 0;
-    font-size: 1.4em;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.submit-title {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .submit-formInput,
@@ -457,7 +499,9 @@
 
 .submit-textarea,
 .review-textarea {
-    height: 100px;
+    height: 600px;
+    width: 400px;
+    min-height: 60px;
     margin-bottom: 10px;
 }
 
@@ -465,8 +509,8 @@
 .review-formInput,
 .submit-textarea,
 .review-textarea  {
-    font-size: 1em;
-    padding: 15px 10px 10px;
+    font-size: 1.3em;
+    padding: 13px 10px 10px 13px;
     font-family: 'Source Sans Pro', arial, sans-serif;
     border: 1px solid #cecece;
     background: #d7d7d7;
@@ -479,31 +523,30 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 80%;
-    max-width: 600px;
+    height: 60px;
 }
 
 .submit-button,
 .review-button {
     margin-top: 15px;
-    margin-bottom: 25px;
-    background-color: #2ABCA7;
+    margin-bottom: 5px;
+    background-color: #997d67;
     padding: 12px 45px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #2ABCA7;
+    border: 1px solid #997d67;
     -webkit-transition: .5s;
     transition: .5s;
-    display: inline-block;
+    display: block;
     cursor: pointer;
-    width: 30%;
+    height: 60px;
     color: #fff;
 }
 
 .submit-button:hover,
 .review-button:hover {
-    background: #19a08c;
+    background: #997d67;
 }
 
 .submit-formLabel .error,
@@ -522,8 +565,29 @@
     border-radius: 6px;
 }
 
+.user-name {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.user-gitEmpty {
+    padding: 13px 30px 13px 30px;
+}
+.user-text {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.user-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0,100%);
+}
 /* 星 */
-.star {
+.star {    
+    height: 60px;
     font-size: 300%;
     color: #f0da61;
 }
